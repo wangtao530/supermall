@@ -1,6 +1,17 @@
-import {request} from './request'
-export function getHomeMultidata(){
+import {
+  request
+} from './request'
+export function getHomeMultidata() {
   return request({
-    url: '/vuedeploytest/supermall/home/multidata.json'
+    url: '/home/multidata.json'
+  })
+}
+export function getHomeGoods(type, index) {
+  return request({
+    url: '/home/goodspage',
+    params: {
+      type,
+      index
+    }
   })
 }

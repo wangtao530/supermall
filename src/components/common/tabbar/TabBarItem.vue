@@ -27,6 +27,14 @@ export default {
     isActiveStyle () {
       return this.isActive ? {color: this.colorStyle} : {}
     }
+  },
+  created(){
+    console.log('tabbaritem created')
+    
+  },
+  destroyed(){
+    console.log('tabbaritem destroyed')
+    
   }
 }
 </script>

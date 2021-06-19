@@ -5,7 +5,7 @@ import axios from 'axios'
 export function request(config){
   // 1.创建axios实例
   const instance = axios.create({
-    baseURL: 'http://192.168.0.102:19900',
+    baseURL: 'http://192.168.0.102:30000/vuedeploytest/supermall',
     timeout: 5000
   })
   // 2.axios拦截器

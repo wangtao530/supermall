@@ -75,7 +75,7 @@ export default {
                observer:true, // 解决刷新后分页器消失的问题
                observeParents:true,
            })
-       },300);
+       },200);
         
     }
 }

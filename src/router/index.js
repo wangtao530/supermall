@@ -5,6 +5,7 @@ const Home = () => import('@/views/home/Home')
 const Category = () => import('@/views/category/Category')
 const Cart = () => import('@/views/cart/Cart')
 const Profile = () => import('@/views/profile/Profile')
+const GoodsDetail = () => import('@/views/detail/GoodsDetail')
 
 // 以下四行代码解决由路由push的路径，重复点击时报错的问题
 const originalPush = VueRouter.prototype.push
@@ -31,7 +32,12 @@ const routes = [{
 {
   path: '/profile',
   component: Profile
-}]
+},
+{
+path: '/detail/:id',
+  component: GoodsDetail
+}
+]
 const router = new VueRouter({
   routes: routes,
   mode: 'history'
